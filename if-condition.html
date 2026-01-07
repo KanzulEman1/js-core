@@ -6,12 +6,79 @@
     <title>javaScript if condition</title>
 </head>
 <body>
-    <h1>javaScript if (odd numbers)</h1>
+    <h1>if else condition</h1>
     <script>
-let raining = true;
-if(raining) {
-    console.log("take umbrella! ")
-}
+        // if //
+        let raining = true;
+        if (raining) {
+            console.log("take umbrella!")
+        }
+
+        //    if else condition//
+        // 1
+        if (true) {
+            console.log("1 is odd");
+        } else {
+            console.log("1 is even");
+        }
+
+        // 2
+        if (false) {
+            console.log("2 is odd");
+        } else {
+            console.log("2 is even");
+        }
+
+        // 3
+        if (true) {
+            console.log("3 is odd");
+        } else {
+            console.log("3 is even");
+        }
+
+        //   if else if else//
+        
+        let age = 16; 
+
+        if (age < 6) {
+            console.log("You go to kindergarten");
+        }
+         else if (age >= 6 && age < 13) {
+            console.log("You go to primary school");
+        }
+         else if (age >= 19 && age < 18) {
+            console.log("You go to high school");
+        }
+         else if (age >= 18 && age < 22) {
+            console.log("You go to college ");
+        } 
+
+        //   switch multiple fixed cases
+         let fruit = "apple";
+
+        switch(fruit) {
+            case "apple":
+                console.log("Red fruit");
+                break;
+            case "banana":
+                console.log("Yellow fruit");
+                break;
+            case "orange":
+                console.log("Orange fruit");
+                break;
+            default:
+                console.log("Unknown fruit color");
+        }
+                //   tarnary //
+                let day = "Sunday";
+
+        let message = day === "Saturday" || day === "Sunday" 
+                      ? "It's weekend!"  : "It's a weekday!";
+
+        console.log(message);
+
+
+
 
 </script>
 </body>
