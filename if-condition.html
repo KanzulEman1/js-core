@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javaScript if condition</title>
+    <title>javaScript conditions</title>
 </head>
 <body>
     <h1>if else condition</h1>
@@ -23,7 +23,7 @@
         }
 
         // 2
-        if (false) {
+        if (!false) {
             console.log("2 is odd");
         } else {
             console.log("2 is even");
@@ -69,6 +69,33 @@
             default:
                 console.log("Unknown fruit color");
         }
+
+        //    example - traffic signal  //
+        let signal ="red"; 
+
+        switch (signal) {
+            case "red":
+                console.log("stop");
+                break;
+            case "yellow" :
+                console.log("get ready") ;
+                break;
+            case "green" :
+                console.log("Go") ;
+                break; 
+
+            default:
+                console.log("invalid signal")   ;    
+                
+
+        }
+        
+
+
+
+
+
+
                 //   tarnary //
                 let day = "Sunday";
 
