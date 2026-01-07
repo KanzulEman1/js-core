@@ -14,6 +14,16 @@
             console.log("take umbrella!")
         }
 
+        // example - pass / fail //
+
+        let marks = 75 ;
+
+        if (marks >= 50){
+            console.log("congratulations! you passed");
+        } else {
+            console.log("sorry! you failed");
+        }
+         
         //    if else condition//
         // 1
         if (true) {
@@ -53,6 +63,19 @@
             console.log("You go to college ");
         } 
 
+         // example - college Entry//
+        let age_ = 18 ;
+        let documents = true;
+
+        if (age_ >= 17 && age_ <= 22 && documents === true){
+            console.log("you are eligible for college admission");
+        }
+        else if (age_ >= 18 && age_ <= 22 && documents === false ){
+            console.log("bring your documents fot admission");
+        }
+        else {
+            console.log("you are not eligible for college admission");
+        }
         //   switch multiple fixed cases
          let fruit = "apple";
 
@@ -89,13 +112,6 @@
                 
 
         }
-        
-
-
-
-
-
-
                 //   tarnary //
                 let day = "Sunday";
 
@@ -103,6 +119,14 @@
                       ? "It's weekend!"  : "It's a weekday!";
 
         console.log(message);
+
+               // month check //
+               let month = "january";
+
+               let season = (month === "december" || month === "jounary" || month === "february")
+               ? "its winter" : "its spring or autum";
+
+               console.log("season");
 
 
 
