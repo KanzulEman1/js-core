@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
     <title>loop task</title>
 </head>
 <body>
-    <h1>LOOP TASK</h1>
+    <h1 class="text-center">LOOP TASK</h1>
+   <div class="flex gap-8 justify-center">
+    <p id="odd"></p>
+     <p id="even" ></p>
+    
+   </div>
     <script>
-        // Even Roll Numbers  //
+        // even / odd Roll Numbers  //
         for (let roll = 1; roll <= 50; roll++){
-            if (roll % 2 === 0 ){
-                console.log("roll no " + roll);
+            if (roll % 2 !== 0 )
+                {
+                
+                console.log("roll no " + roll  + " is odd");
+                document.getElementById("odd").innerHTML += "roll no " + roll  + " is odd <br>";
             }
+        else if (roll % 2 === 0 ) {
+                
+                console.log(roll + " is even");
+                document.getElementById("even").innerHTML += "roll no " + roll  + " is even <br>" ;
+                 
+            }
+            else {
 
+                console.log("Nothing is odd or even")
+            }
         }
 
-
-         // odd Numbers check //
-        for (let i = 1; i <= 50; i++){
-            if (i % 2 !== 0 ){
-                console.log(i + " is odd");
-            }
-
-        }
 
     </script>
 </body>
