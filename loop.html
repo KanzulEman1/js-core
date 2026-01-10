@@ -6,77 +6,151 @@
     <title>loops</title>
 </head>
 <body>
+    <h1>LOOPS PRACTICE</h1>
+ 
+   <script>
+  
+    // STRING EXAMPLES //
+  
 
-    <script>
-            //   my full name length //
-        const fullname = "kanz ul eman";
-        console.log(fullname.length);
+    // Full name length
+    const fullname = "kanz ul eman";
+    console.log("Full name length:", fullname.length);
 
-            //   full name with index number //
-        const name = "kanz-ul-eman";
-        console.log(name[0]);
+    // Full name first character
+    const name = "kanz-ul-eman";
+    console.log("First character:", name[0]);
 
-            //   days-length and index   //
-        const days = ["sunday", "monday" , "tuesday" , "wednesday" , "thursday" , "friday" , "saturday"];
-        console.log(days.length);
-        console.log(days[5]);
-        
-            //    loops  //
-            // string loop //
-            const name_ = "kanz-ul-eman";
+    // name each letter using a loop
+    const name_ = "kanz-ul-eman";
+    
+    for(let i = 0; i < name_.length; i++){
+        console.log(name_[i]);
+    }
 
-            for(let i = 0 ; i < name_.length; i++){
-                console.log(name[i]);
-            }
-            
-            // reverse string //
+ 
+       // Count specific letter 'a' in name
 
-             const myname = "kanz-ul-eman";
+    const myName = "kanz ul eman";
+    let countA = 0;
 
-            for(let i = name.length - 1 ; >= 0; i--){
-                console.log(myname[i]);
-            }
+    for (let i = 0; i < myName.length; i++){
+    if (myName[i] === "a"){
+        countA++;
+       }
+    }
+    console.log("Total 'a' in my name:", countA);
+
+    // Reverse a string
+    const myname = "kanz-ul-eman";
+    for(let i = myname.length - 1; i >= 0; i--){
+        console.log(myname[i]);
+    }
+
+    // number loop 1 to 19
+    console.log("Numbers 1 to 19:");
+    for (let i = 1; i < 20; i++){
+        console.log(i);
+    }
+
+    // loop examples
+    for(let i = 1; i <= 5; i++){
+        console.log("Keep Learning", i);
+    }
+
+    for(let i = 0; i <= 4; i++){
+        console.log("Practice daily", i);
+    }
+
+    for(let i = 2; i <= 10; i++){
+        console.log("JavaScript Loop", i);
+    }
+
+ 
+    // ARRAY EXAMPLES //
+  
+
+    // Days of the week
+    const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+    console.log("Total days:", days.length);
+    console.log(days[6]);
 
 
-            // 1 t0 19 //
-        for (let i = 1; i < 20; i++){
-            console.log(i);
-        }  
-            // loop with fruits //
-        let fruits = ["apple" , "mango" , "banana"];
+     // boolean with array 
 
-        for (let i = 0; i < fruits.length; i++){
-            console.log(fruits[i]);
-        }
+     const booleanArray = [ true , false ,true , false , true ];
 
-            // 12 months //
-        let month = ["january" , "February" , "March"  , "April"  , "May"  , "June"  , 
-        "July"  , "August"  , "September"  , "October"  , "November"  , "December" ];
+     console.log("Total value in boolean array:" , booleanArray.length);
 
-        for (let i = 0; i < month.length; i++){
-            console.log(month[i]);
-            // console.log(month[8]);
-        }
+     for (let i = 0; i < booleanArray.length ; i++){
+        console.log("index" , i , "value:" , booleanArray[i]);
+     }
 
-            //  strating value / condition / increment //
-            let i = 0;
 
-            while (i <=5){
-                console.log(i);
-                i++;
-            }
+    // Data types with array //
 
-            // while example
+    const dataTypes = ["number" , "string" , "boolean" , "undefined" , "null" , "object" , "array"];
 
-            let  isON = true;
+    console.log("Total data types:" , dataTypes.length);
 
-            while (isON) {
-                console.log('light on');
-                isON =  false;
-            }
+    for(let i = 0; i < dataTypes.length; i++){
+        console.log(i + 1 , dataTypes[i]);
+    }
 
-            
 
-    </script>
+    // Animals array
+    let animals = ["cat", "dog", "rabbit", "parrot"];
+    console.log("Animals array:");
+    for(let i = 0; i < animals.length; i++){
+        console.log(i, animals[i]);
+    }
+
+    // Numbers array squared
+    let numbers = [2, 4, 6, 8, 10];
+    console.log("Numbers squared:");
+    for(let i = 0; i < numbers.length; i++){
+        console.log("Index:", i, "Value squared:", numbers[i]**2);
+    }
+
+    // Fruits array
+    let fruits = ["apple", "mango", "banana"];
+    console.log("Fruits array:");
+    for (let i = 0; i < fruits.length; i++){
+        console.log(fruits[i]);
+    }
+
+    // 12 months
+    let month = ["January", "February", "March", "April", "May", "June", 
+                 "July", "August", "September", "October", "November", "December"];
+    console.log("Months of the year:");
+    for (let i = 0; i < month.length; i++){
+        console.log(month[i]);
+    }
+
+    // WHILE LOOP EXAMPLES //
+
+    // Simple while loop
+    console.log("While loop numbers 0 to 5:");
+    let i = 0;
+    while (i <= 5){
+        console.log(i);
+        i++;
+    }
+
+    // While loop with boolean condition
+
+    let isON = true;
+    while (isON){
+        console.log('Light on');
+        isON = false; // Stop the loop
+    }
+
+</script>
+
+
+
+
+
+
 </body>
 </html>
